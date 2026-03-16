@@ -18,7 +18,7 @@ import java.util.Scanner;
 
 public class CalcularModaDesviacion {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         int[] edades = new int[10];   // arreglo para guardar las edades
         double suma = 0;
@@ -28,7 +28,7 @@ public class CalcularModaDesviacion {
 
         for (int i = 0; i < edades.length; i++) {
             System.out.print("Edad " + (i + 1) + ": ");
-            edades[i] = sc.nextInt();
+            edades[i] = scanner.nextInt();
             suma += edades[i];
         }
 
@@ -38,7 +38,7 @@ public class CalcularModaDesviacion {
 
         // 2. Moda
         boolean hayModa = false;
-        int maxFrecuencia = 1;
+        int maximaFrecuencia = 1;
 
         for (int i = 0; i < edades.length; i++) {
             int contador = 0;
@@ -49,8 +49,8 @@ public class CalcularModaDesviacion {
                 }
             }
 
-            if (contador > maxFrecuencia) {
-                maxFrecuencia = contador;
+            if (contador > maximaFrecuencia) {
+                maximaFrecuencia = contador;
                 hayModa = true;
             }
         }
@@ -68,7 +68,7 @@ public class CalcularModaDesviacion {
                     }
                 }
 
-                if (contador == maxFrecuencia) {
+                if (contador == maximaFrecuencia) {
                     System.out.print(edades[i] + " ");
                 }
             }
@@ -87,7 +87,7 @@ public class CalcularModaDesviacion {
         System.out.printf("Desviación estándar: %.2f\n", desviacion);
 
         // 3. Arreglos paralelos
-        sc.nextLine();
+        scanner.nextLine();
 
         String[] nombres = new String[10];
         int[] edades2 = new int[10];
@@ -97,18 +97,18 @@ public class CalcularModaDesviacion {
         for (int i = 0; i < nombres.length; i++) {
 
             System.out.print("Nombre: ");
-            nombres[i] = sc.nextLine();
+            nombres[i] = scanner.nextLine();
 
             System.out.print("Edad: ");
-            edades2[i] = sc.nextInt();
-            sc.nextLine();
+            edades2[i] = scanner.nextInt();
+            scanner.nextLine();
         }
 
         // Elegir tipo de orden
         System.out.println("\n1. Ordenar por edad");
         System.out.println("2. Ordenar por nombre");
         System.out.print("Elija una opción: ");
-        int opcion = sc.nextInt();
+        int opcion = scanner.nextInt();
 
         // Ordenamiento
         for (int i = 0; i < nombres.length - 1; i++) {
@@ -143,8 +143,6 @@ public class CalcularModaDesviacion {
         for (int i = 0; i < nombres.length; i++) {
             System.out.println(nombres[i] + " - " + edades2[i]);
         }
-
-        sc.close();
     
     }
 }
