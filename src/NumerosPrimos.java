@@ -1,5 +1,8 @@
 package src;
 
+// 1.Inicializar directamente un arreglo con los primeros 10 números primos e imprimir
+// el arreglo.
+
 public class NumerosPrimos {
     public static void main(String[] args) {
         

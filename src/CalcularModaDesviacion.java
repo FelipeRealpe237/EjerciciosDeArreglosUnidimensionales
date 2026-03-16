@@ -1,5 +1,19 @@
 package src;
 
+// Cálculo de Moda y Desviación Estándar
+
+// 1. Lea las edades de 10 estudiantes y almacénelas en un arreglo de enteros.
+// 2. Calcule y muestre:
+    // 1.Promedio de las edades.
+    // 2.Moda: Valor(es) que más se repite(n). Si todas las edades son únicas, indique "No hay moda".
+    // 3.Desviación estándar (con dos decimales).
+// 3. Lea los nombres y edades de 10 estudiantes, almacenándolos en dos arreglos paralelos (String[] nombres,
+// int[] edades).
+    // Permita al usuario elegir cómo ordenar los datos:
+    // Opción 1: Ordenar por edad (ascendente).
+    // Opción 2: Ordenar por nombre (orden alfabético).
+
+// Muestre los arreglos ordenados, manteniendo la correspondencia entre nombres y edades.
 import java.util.Scanner;
 
 public class CalcularModaDesviacion {

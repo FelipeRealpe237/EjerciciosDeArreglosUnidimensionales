@@ -1,5 +1,7 @@
 package src;
 
+// 4. Leer la edad de 10 estudiantes y calcule
+
 import java.util.Scanner;
 
 public class Estudiantes {
@@ -15,6 +17,8 @@ public class Estudiantes {
             edades[i] = scanner.nextInt();
             suma += edades[i];
         }
+
+        // a) El promedio de edades.
         double promedio = suma/edades.length;
         System.out.println("Promedio: "+ promedio);
 
@@ -28,6 +32,8 @@ public class Estudiantes {
                 }
             }
         }
+
+        // b) La mediana.
         double mediana = (edades[4] + edades[5]) / 2.0;
         System.out.println("Mediana: " + mediana);
     }
