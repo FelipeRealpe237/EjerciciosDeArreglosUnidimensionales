@@ -12,6 +12,7 @@ public class NumeroMayorYMenor {
         int[] numeros = new int[10];
 
         for (int i = 0; i < numeros.length; i++) {
+            System.out.print("Ingrese el número " + (i + 1) + ": ");
             numeros[i] = scanner.nextInt();
         }
 
